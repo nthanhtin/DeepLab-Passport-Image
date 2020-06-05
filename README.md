@@ -2,6 +2,10 @@
 
 Recently, I have to submit some very important paperwork that requires passport photo along with it. Despite the on going pandemic, I still had to go to Walgreens because I don't have any white screen and I don't know photoshop. So I got there, waited in line for about an hour just to get my picture taken, heard someone coughing, I left instantly and thought to myself: I think I can do this with Machine Learning. I came back 3 hours later straight to the printer with my own pictures costing 23 cents each and out of the store after 5 minutes. Here's how I solved my first word problem and protect my health with Machine Learning.
 
+# Usage:
+
+`python passport_photo.py -i input_image -o output_image'
+
 # Face Detection
 
 I needed a quick and painless way to detect human face so I choose to use Haar feature-based cascade classifiers which available in OpenCV and pretrained xml model can be found [online](https://github.com/opencv/opencv/tree/master/data/haarcascades) too. You can read more about the theory [here](https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html).
