@@ -15,6 +15,7 @@ Basically, the classifier was trained with with a lot of positive and negative i
 While testing the code, I found that having scaleFactor at 1.30 and minNeighbors at 4 works well and fast for me since faces in potraits are usually very big. you can decrease them if the code doesn't work so well for you but the code will be slower.
 
 Result:
+
 ![](/asset/s1.png)
 
 ## Center and Crop
@@ -35,10 +36,18 @@ else:
 Passport photo has to be 2x2 right. This is very simple. I just find the difference between the face bounding box returned by the classifier and crop my image accordingly. However, I know there will be some cases where this will go out of bound. Feel free to comment or open an issue on Github with sugession. I know this can be improved. 
 Result:
 
+![](/asset/s2.png)
 ## DeepLab for White Background
 
 In detail on [Google Blog](https://github.com/tensorflow/models/tree/master/research/deeplab)
 I used DeepLab v3 for the task. It was trained on the COCO dataset with a great peformance in image segmentation task.
-insert schematic.
+
+![](/asset/deeplab.png)
+
 For my best result, I used the pretrained Xception weights but Mobilenetv2 is way faster with a bit of accuracy trade off. 
-After having segmentation matrix the rest is imple, I used it as a mask and multiply the background with `1-mask` to get the white background, multiply `mask` with original image to get the object and add them together to get the final image:
+
+![](/asset/seg.png)
+
+After having segmentation matrix the rest is imple, I used it as a mask and multiply the background with `1.0-mask` to get the white background, multiply `mask` with original image to get the object and add them together to get the final image:
+
+![](/asset/final.png)
