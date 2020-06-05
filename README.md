@@ -15,6 +15,7 @@ Basically, the classifier was trained with with a lot of positive and negative i
 While testing the code, I found that having scaleFactor at 1.30 and minNeighbors at 4 works well and fast for me since faces in potraits are usually very big. you can decrease them if the code doesn't work so well for you but the code will be slower.
 
 Result:
+![](/asset/s1.png)
 
 ## Center and Crop
 ```
