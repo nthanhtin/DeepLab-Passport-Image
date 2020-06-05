@@ -6,7 +6,7 @@ from deeplab import *
 from PIL import Image
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Make Passport Photo. Let's save 20 bucks and a bit of time")
+    parser = argparse.ArgumentParser(description="Make Passport Photo. Let's save 15 bucks and a bit of time")
     parser._action_groups.pop()
     requiredNamed = parser.add_argument_group("required arguments")
     requiredNamed.add_argument("-i", "--input-image-path", type=str, required=True)
