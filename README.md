@@ -33,7 +33,7 @@ else:
     else:
         img = img[y_f-int(np.floor(height_crop)):y_f+h_f+int(np.ceil(height_crop)), :] 
 ```
-Passport photo has to be 2x2 right. This is very simple. I just find the difference between the face bounding box returned by the classifier and crop my image accordingly. However, I know there will be some cases where this will go out of bound. Feel free to comment or open an issue on Github with sugession. I know this can be improved. 
+Passport photo has to be 2x2 right. This is very simple. I just find the difference between the face bounding box returned by the classifier and crop my image accordingly. However, I know there will be some cases where this will go out of bound. Feel free to comment or open an issue on Github with sugession. I know this can be improved since it's heavily depends on if your face is perpendicular to the camera or not. 
 Result:
 
 ![](/asset/s2.png)
