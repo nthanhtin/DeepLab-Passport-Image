@@ -2,7 +2,7 @@
 
 Recently, I have to submit some very important paperwork that requires passport photo along with it. Despite the on going pandemic, I still had to go to Walgreens because I don't have any white screen and I don't know photoshop. So I got there, waited in line for about an hour just to get my picture taken, heard someone coughing, I left instantly and thought to myself: I think I can do this with Machine Learning. I came back 3 hours later straight to the printer with my own pictures costing 23 cents each and out of the store after 5 minutes. Here's how I solved my first word problem and protect my health with Machine Learning.
 
-# Usage:
+# Usage
 
 `python passport_photo.py -i input_image -o output_image`
 
