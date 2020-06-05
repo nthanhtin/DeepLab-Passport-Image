@@ -4,7 +4,7 @@ Recently, I have to submit some very important paperwork that requires passport 
 
 # Usage:
 
-`python passport_photo.py -i input_image -o output_image'
+`python passport_photo.py -i input_image -o output_image`
 
 # Face Detection
 
